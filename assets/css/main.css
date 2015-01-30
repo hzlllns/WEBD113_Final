@@ -1,0 +1,352 @@
+/* 
+
+COLORS!
+
+GREEN: #85c039
+DARK BLUE: #182528
+YELLOW: #d8c542
+BRIGHT BLUE: #1a7288
+RED: #aa4242
+
+*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	outline: 0;
+} 
+
+body {
+	color: #000;
+	font: 13px/15px 'Helvetica', Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+a { 
+	text-decoration: none;
+	color: #4f4957;
+	transition: color 0.1s ease-in-out;
+	-webkit-transition: color 0.1s ease-in-out;
+}
+
+blockquote { 
+	display: block; 
+	font: 22px 'Helvetica Neue', Helvetica, sans-serif; 
+	font-weight: normal;
+	font-style: italic;
+	margin: 30px 0;
+}
+
+blockquote cite { 
+	display: block;
+	font-style: normal;
+	text-align: right;
+}
+
+/* NAVIGATION ------------------ */
+
+#top_nav {
+	font: 18px 'Varela Round', Arial, sans-serif;
+	width: 100%;
+	text-align: center;
+	height: 80px;
+	background: #182528;
+	margin: 0 auto;
+	font-weight: bold;
+	position: fixed;
+	z-index: 1;
+}
+
+#top_nav ul { padding-top: 30px; }
+
+	#top_nav ul li {
+		display: inline;
+		margin: 0 30px;
+		padding: 0;
+	}
+
+	#top_nav ul a { color: #1299bb; }
+	#top_nav ul a:hover { color: #d8c542; }
+
+	#top_nav ul li.logo_contain {
+		margin: 0;
+		padding: 0;
+		position: relative;
+		top: -50px;
+	}
+
+	#logo {         
+		font:0/0 a;
+        text-shadow: none;
+        color:transparent;
+        background: url(../img/logo.png) no-repeat;
+        width:130px;
+        display: inline-block;
+        padding: 0;
+        height:130px;
+        margin: 0;
+    }
+
+
+/* HOME ------------------ */
+
+.slide {
+	width: 100%;
+	height: 900px;	
+	padding: 4em 0;
+	display: block;	
+}
+
+.section_container { 
+	max-width:1200px; 
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+#home_section {
+	background: #fff url(../img/bw.jpg) repeat-x fixed;
+	padding-top: 150px;
+	color: #fff;
+}
+
+	#home_section h1 { 
+		font: 45px/50px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		letter-spacing: 1px;
+		font-weight: bold;
+		
+		text-shadow: 3px 3px 6px #47352d;
+	}
+
+	#home_section h2 { 
+		font: 18px 'Helvetica Neue', Helvetica, sans-serif;
+		font-weight: bold;
+		margin-top: 30px;
+		text-transform: uppercase;
+		letter-spacing:2px;
+	}
+
+#home_section p { 
+	font: 20px/26px 'Varela Round', Helvetica, sans-serif; 
+	letter-spacing: 1px;
+	margin-top: 20px;
+}
+
+.left { width: 400px; float: left; }
+.home { width: 270px; }
+
+#home_form input {
+	border: 0;
+	margin: 20px auto 0 auto;
+	font: 15px/19px 'Varela Round', Helvetica, sans-serif;
+	letter-spacing: 1px;
+	padding: 13px 15px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0 4px 0 #000;
+  	box-shadow: 0 4px 0 #000;
+}
+
+	#home_form input#submit { 
+		background-color: #d8c542; 
+		transition: background-color 0.5s ease;
+		text-transform: uppercase;
+	}
+		#home_form input#submit:hover { 
+			background-color: #1299bb;
+			color: #fff;
+			cursor: pointer;
+		}
+
+#app_preview {
+	background: url(../img/iphone.png) no-repeat;
+	width: 461px;
+	height: 800px;
+	display: block;
+	float: left;
+	position: relative;
+}
+
+/* HOME: CAROUSEL ------------------ */
+
+.showcase { 
+	position: absolute; 
+	top: 130px;
+	left: 76px;
+	overflow: auto; 
+	margin:0; 
+	height: 497px !important; 
+	width:294px; 
+}
+    .showcase li { list-style: none;  margin:0; padding:0;}
+        .showcase ul { margin: 0; padding: 0; display: auto;}
+        .showcase ul li { float: left;  margin:0; padding: 0;}
+
+
+    .showcase .dots {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        margin: 0;
+    }
+        .showcase .dots li {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            margin: 0 4px;
+            text-indent: -999em;
+            border-radius: 6px;
+            cursor: pointer;
+            opacity: .6;
+            
+            -webkit-transition: background .5s, opacity .5s;
+            transition: background .5s, opacity .5s;
+        }
+
+        .showcase .dots li {
+            border: 2px solid #fff;
+        }
+            .showcase .dots li.active {
+                background: #fff;
+                opacity: 1;
+            }
+
+/* FEATURES ------------------ */
+
+#features_section {
+	background: #1a7288;
+}
+
+.feature { 
+	width: 30%; 
+	float: left; 
+	margin-right: 20px;
+	font: 19px/28px 'Varela Round', Helvetica, sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
+	.feature p { margin: 30px 0; }
+
+	.feature a { 
+		font: 15px/19px 'Varela Round', Helvetica, sans-serif;
+		letter-spacing: 1px;
+		padding: 13px 15px;
+		border-radius: 5px;
+	  	background: #d8c542;
+	  	text-transform: uppercase;
+	  	color: #4a4a4a;
+	}
+
+	.feature a:hover {
+		background: #152528;
+		color: #fff;
+	}
+
+/* FEATURES: ANIMATION ------------------ */
+
+@-webkit-keyframes fadeAway {
+	0% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	} 
+	100% {
+		opacity: 0;
+		-webkit-transform: translateY(100px);
+	}
+}
+
+@keyframes fadeAway {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+}
+
+.trash {
+	-webkit-animation: fadeAway 3s infinite;
+	animation: fadeAway 3s infinite;
+	height: 200px;
+	z-index: 5;
+	} 
+
+.bin { z-index: 7; }
+
+/* SIGN UP ------------------ */
+
+#signup_section {
+	background: #f0c34a url(../img/wrinkles.jpg) repeat-x fixed;
+	text-align: center;
+	color: #fff;
+}
+
+	#signup_section h1 { 
+		font-size: 60px;
+		margin: 400px 0 30px 0;
+	}
+	
+	form#signup_form {
+		display: block;
+	}
+
+
+#signup_form input {
+	border: 0;
+	margin: 20px auto 0 auto;
+	font: 15px/19px 'Varela Round', Helvetica, sans-serif;
+	letter-spacing: 1px;
+	padding: 23px 25px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+	#signup_form input#submit { 
+		background-color: #182528; 
+		transition: background-color 0.5s ease;
+		text-transform: uppercase;
+		color: #fff;
+	}
+		#signup_form input#submit:hover { 
+			background-color: #1299bb;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		#email_signup { width: 400px; }
+
+/* ICONS ------------------ */
+
+a.fa {    
+	-webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    margin-right: 10px;
+}
+	a.fa:hover { 
+		-webkit-transform: rotate(360deg); 
+		transform: rotate(360deg);
+	}
+
+	.download { 
+		margin-top: 150px; 
+		font-size: 60px; 
+		color: #85c039;
+	}
+
+	.contact { 
+		color: #fff; 
+		font-size: 40px;
+		margin-top: 60px;
+	}
+
+	.contact:hover {
+		color: #182528;
+	}

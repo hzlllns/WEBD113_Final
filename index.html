@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Hazel Llanes">
+	<title>FINAL</title>
+
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.cluetip.css">
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div id="top_nav">
+		<ul>
+			<li><a href="#home_section">Home</a></li>
+			<li><a href="#features_section">Features</a></li>
+			<li class="logo_contain"><a href="#home_section" id="logo">WhichBin</a></li>
+			<li><a href="mailto:hello@whichbin.com">Contact</a></li>
+			<li><a href="#signup_section">Sign Up</a></li>
+		</ul>
+	</div>
+
+	<div class="slide" id="home_section">
+		<div class="section_container">
+			<section class="left">
+		        <div id="download">
+            		<a href="#" class="fa fa-apple download"></a>
+            		<a href="#" class="fa fa-android download"></a>
+            	</div>				
+				<h1>Never put your recycling in the wrong bin again.</h1>
+				<p>Using the camera on your phone, WhichBin can detect which items in your trash is recyclable, compostable or belongs in the garbage.</p>
+				<h2>Get 15% off when you subscribe</h2>
+				<form action="post" method="#" name="newsletter" id="home_form">
+                    <input type="email" id="email" placeholder="Email Address">
+                    <input type="submit" id="submit" value="Subscribe">
+                </form>
+			</section><!-- /.left -->
+
+			<div id="app_preview">
+                <div class="showcase">
+	                <ul>
+	                    <li><img src="assets/img/preview1.jpg" /></li>
+	                    <li><img src="assets/img/preview1.jpg" /></li>
+	                    <li><img src="assets/img/preview1.jpg" /></li>
+	                </ul>
+                </div><!-- /.showcase -->
+            </div><!-- /#app_preview -->
+
+		</div><!-- /.section_container -->
+	</div><!-- /#home_section -->
+
+
+	<div class="slide" id="features_section">
+		<div class="section_container">
+			<div class="feature">
+				<img src="assets/img/bottle.png" class="trash">
+				<img src="assets/img/bluebin.png" class="bin">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tellus leo. Suspendisse quis lobortis velit, eget egestas turpis. In elit diam, congue vitae rhoncus at, vestibulum nec mauris. Maecenas gravida non dolor id mollis. Aliquam erat volutpat. </p>
+				<a href="#">download</a>
+			</div><!-- /.feature -->
+
+			<div class="feature">
+				<img src="assets/img/apple.png" class="trash">
+				<img src="assets/img/greenbin.png" class="bin">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tellus leo. Suspendisse quis lobortis velit, eget egestas turpis. In elit diam, congue vitae rhoncus at, vestibulum nec mauris. Maecenas gravida non dolor id mollis. Aliquam erat volutpat.</p>
+				<a href="#">download</a>
+			</div><!-- /.feature -->
+
+			<div class="feature">
+				<img src="assets/img/bag.png" class="trash">
+				<img src="assets/img/greybin.png" class="bin">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tellus leo. Suspendisse quis lobortis velit, eget egestas turpis. In elit diam, congue vitae rhoncus at, vestibulum nec mauris. Maecenas gravida non dolor id mollis. Aliquam erat volutpat.</p>
+				<a href="#">download</a>
+			</div><!-- /.feature -->
+
+		</div><!-- /.section_container -->
+	</div><!-- /#features_section -->
+
+	<div class="slide" id="signup_section">
+		<div class="section_container">
+			<h1>Get 15% off when you sign up!</h1>
+			<form action="post" method="#" name="newsletter" id="signup_form">
+            	<input type="email" id="email_signup" placeholder="Email Address"  title="Please provide your firstname.">
+                <input type="submit" id="submit" value="Subscribe">
+				<span href="#" id="email_alert" class="email_alert" title="We promise never to share your email address with anyone"></span>
+            </form>
+            <a href="#" class="fa fa-envelope contact"></a>
+            <a href="#" class="fa fa-twitter contact"></a>
+            <a href="#" class="fa fa-facebook contact"></a>
+		</div><!-- /.section_container -->
+	</div><!-- /#signup_section -->
+
+<!-- Q & A
+
+1. What is a design Pattern? — User Interface Design patterns are recurring solutions that solve common design problems. Design patterns are standard reference points for the experienced user interface designer.
+
+2. What is a Javascript library? — A Javascript library is a collection of scripts that allow for easy execution of common javascript tasks.
+
+3. Why do we use jQuery? — We use jQuery because it has a large developer community, it is well supported in browsers, it is frequently updated, there are multitudes of plugins, and it makes use of CSS.
+
+4. 1 example of a jQuery Event. — The click() event binds an event handler to the “click” Javascript event, or triggers that event on an element.
+
+5. 1 example of a jQuery Effect. — The slideUp() method hides the matched elements with a sliding motion.
+
+6. Name of one plugin that isn’t used in this project. — Upload by Edmund Gentle is a plugin that makes file uploads simpler.
+
+7. Link to official jQuery Plugin Directory — http://plugins.jquery.com
+
+8. What is a vendor prefix and why do we need it? — Vendor prefixes allow CSS3 effects to appear in all browsers. Prefixes include -webkit- (Safari/Chrome), -moz- (Firefox), -o- (Opera), and -ms- (Internet Explorer). It is important because of current inconsistency in element support across browsers.
+
+9. What does the “transition-timing-function” define? — 
+“transition-timing-function” is used to describe how the intermediate values of the CSS properties being affected by the transition effect are calculated. This, in essence, lets you establish an acceleration curve so that the speed of the transition can vary over a duration.
+
+10. Why is the history of animation relevant to web animation? — Knowing techniques for animation that have been used up until this point will help us understand today's techniques. Software interfaces to this day use terminology and digital methods of traditional animation techniques. 
+
+11. What does GIF stand for and what year was it released? — The Graphics Interchange Format  is a bitmap image format that was introduced by CompuServe in 1987.
+
+-->
+
+	<script src="assets/js/jquery-latest.min.js"></script>
+	<script src="assets/js/unslider.min.js"></script>
+	<script src="assets/js/jquery.cluetip.min.js"></script>
+	<script>
+        $(function() {
+            $('.showcase').unslider({
+                speed: 900,               //  The speed to animate each slide (in milliseconds)
+                delay: 4000,              //  The delay between slide animations (in milliseconds)
+                keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+                dots: true,               //  Display dot navigation
+                fluid: false              //  Support responsive design. May break non-responsive designs
+            });
+        });
+
+            $(function() { // SMOOTH SCROLL
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });           
+	</script>
+
+	<script>
+		$(function() {
+		            $('#email_alert').cluetip({splitTitle: '|', showTitle:true, cluetipClass: 'jtip', dropShadow:false, positionBy:'fixed'});
+		             
+		            //show tooltip box when email_signup get focus
+		            $('#email_signup').focusin(function(){
+		                $('#email_alert').mouseenter();
+		            });
+		             
+		            //hide tooltip box when email_signup lost focus
+		            $('#email_signup').focusout(function(){
+		                $('#email_alert').mouseleave();
+		            });
+		        });
+	</script>        
+
+</body>
+</html>
